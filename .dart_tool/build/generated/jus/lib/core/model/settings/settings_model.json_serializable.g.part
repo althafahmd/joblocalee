@@ -1,0 +1,15 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$SettingsModelImpl _$$SettingsModelImplFromJson(Map<String, dynamic> json) =>
+    _$SettingsModelImpl(
+      isLoggedIn: json['isLoggedIn'] as bool? ?? false,
+      token: json['token'] as String? ?? '',
+    );
+
+Map<String, dynamic> _$$SettingsModelImplToJson(_$SettingsModelImpl instance) =>
+    <String, dynamic>{
+      'isLoggedIn': instance.isLoggedIn,
+      'token': instance.token,
+    };

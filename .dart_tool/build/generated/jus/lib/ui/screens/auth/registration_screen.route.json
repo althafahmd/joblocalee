@@ -1,0 +1,1 @@
+{"routes":[{"name":null,"pathParams":[],"pageType":{"import":"package:jus/ui/screens/auth/registration_screen.dart","name":"RegistrationScreen","isNullable":false,"isRecordType":false},"className":"RegistrationScreen","parameters":[],"hasWrappedRoute":true,"hasConstConstructor":true,"deferredLoading":null}],"inputPath":"lib/ui/screens/auth/registration_screen.dart","inputHash":0}

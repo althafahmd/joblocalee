@@ -1,0 +1,9 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$LocalityModelImpl _$$LocalityModelImplFromJson(Map<String, dynamic> json) =>
+    _$LocalityModelImpl();
+
+Map<String, dynamic> _$$LocalityModelImplToJson(_$LocalityModelImpl instance) =>
+    <String, dynamic>{};

@@ -1,0 +1,27 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$UserModelImpl _$$UserModelImplFromJson(Map<String, dynamic> json) =>
+    _$UserModelImpl(
+      name: json['name'] as String,
+      email: json['email'] as String,
+      phone: json['phone'] as String,
+      id: json['_id'] as String,
+      gender: json['gender'] as String,
+      education: json['education'] as String,
+      age: json['age'] as String,
+      address: json['address'] as String,
+    );
+
+Map<String, dynamic> _$$UserModelImplToJson(_$UserModelImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'email': instance.email,
+      'phone': instance.phone,
+      '_id': instance.id,
+      'gender': instance.gender,
+      'education': instance.education,
+      'age': instance.age,
+      'address': instance.address,
+    };

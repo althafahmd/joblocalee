@@ -1,0 +1,1 @@
+{"routes":[{"name":null,"pathParams":[],"pageType":{"import":"package:jus/ui/screens/menu/menu_screen.dart","name":"MenuScreen","isNullable":false,"isRecordType":false},"className":"MenuScreen","parameters":[],"hasWrappedRoute":true,"hasConstConstructor":true,"deferredLoading":null}],"inputPath":"lib/ui/screens/menu/menu_screen.dart","inputHash":0}

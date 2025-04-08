@@ -1,0 +1,30 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'user_service_dto.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$UserServiceDtoImpl _$$UserServiceDtoImplFromJson(Map<String, dynamic> json) =>
+    _$UserServiceDtoImpl(
+      user: UserModel.fromJson(json['user'] as Map<String, dynamic>),
+      token: json['accessToken'] as String,
+    );
+
+Map<String, dynamic> _$$UserServiceDtoImplToJson(
+        _$UserServiceDtoImpl instance) =>
+    <String, dynamic>{
+      'user': instance.user.toJson(),
+      'accessToken': instance.token,
+    };
+
+_$UserUpdateDtoImpl _$$UserUpdateDtoImplFromJson(Map<String, dynamic> json) =>
+    _$UserUpdateDtoImpl(
+      user: UserModel.fromJson(json['user'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$UserUpdateDtoImplToJson(_$UserUpdateDtoImpl instance) =>
+    <String, dynamic>{
+      'user': instance.user.toJson(),
+    };

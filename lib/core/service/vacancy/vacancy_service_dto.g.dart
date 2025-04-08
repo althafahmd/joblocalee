@@ -1,0 +1,22 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'vacancy_service_dto.dart';
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$VacancyServiceDtoImpl _$$VacancyServiceDtoImplFromJson(
+        Map<String, dynamic> json) =>
+    _$VacancyServiceDtoImpl(
+      vacancy: (json['vacancy'] as List<dynamic>?)
+              ?.map((e) => VacancyModel.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+
+Map<String, dynamic> _$$VacancyServiceDtoImplToJson(
+        _$VacancyServiceDtoImpl instance) =>
+    <String, dynamic>{
+      'vacancy': instance.vacancy.map((e) => e.toJson()).toList(),
+    };

@@ -1,0 +1,60 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'settings_model.dart';
+
+// **************************************************************************
+// TypeAdapterGenerator
+// **************************************************************************
+
+class SettingAdapter extends TypeAdapter<_$SettingsModelImpl> {
+  @override
+  final int typeId = 0;
+
+  @override
+  _$SettingsModelImpl read(BinaryReader reader) {
+    final numOfFields = reader.readByte();
+    final fields = <int, dynamic>{
+      for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
+    };
+    return _$SettingsModelImpl(
+      isLoggedIn: fields[0] == null ? false : fields[0] as bool,
+      token: fields[1] == null ? '' : fields[1] as String,
+    );
+  }
+
+  @override
+  void write(BinaryWriter writer, _$SettingsModelImpl obj) {
+    writer
+      ..writeByte(2)
+      ..writeByte(0)
+      ..write(obj.isLoggedIn)
+      ..writeByte(1)
+      ..write(obj.token);
+  }
+
+  @override
+  int get hashCode => typeId.hashCode;
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      other is SettingAdapter &&
+          runtimeType == other.runtimeType &&
+          typeId == other.typeId;
+}
+
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$SettingsModelImpl _$$SettingsModelImplFromJson(Map<String, dynamic> json) =>
+    _$SettingsModelImpl(
+      isLoggedIn: json['isLoggedIn'] as bool? ?? false,
+      token: json['token'] as String? ?? '',
+    );
+
+Map<String, dynamic> _$$SettingsModelImplToJson(_$SettingsModelImpl instance) =>
+    <String, dynamic>{
+      'isLoggedIn': instance.isLoggedIn,
+      'token': instance.token,
+    };

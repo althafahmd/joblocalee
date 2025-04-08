@@ -1,0 +1,11 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$NotificationModelImpl _$$NotificationModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$NotificationModelImpl();
+
+Map<String, dynamic> _$$NotificationModelImplToJson(
+        _$NotificationModelImpl instance) =>
+    <String, dynamic>{};
