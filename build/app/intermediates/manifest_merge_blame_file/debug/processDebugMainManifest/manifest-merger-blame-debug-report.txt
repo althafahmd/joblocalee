@@ -1,0 +1,194 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.jus"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:39:5-60:15
+24        <intent>
+24-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:40:9-43:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:41:13-72
+25-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:41:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:42:13-50
+27-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:42:19-48
+28        </intent>
+29
+30        <!-- If your app checks for SMS support -->
+31        <intent>
+31-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:46:9-49:18
+32            <action android:name="android.intent.action.VIEW" />
+32-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:47:13-65
+32-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:47:21-62
+33
+34            <data android:scheme="sms" />
+34-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:42:13-50
+35        </intent>
+36        <!-- If your app checks for call support -->
+37        <intent>
+37-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:51:9-54:18
+38            <action android:name="android.intent.action.VIEW" />
+38-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:47:13-65
+38-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:47:21-62
+39
+40            <data android:scheme="tel" />
+40-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:42:13-50
+41        </intent>
+42        <!-- If your application checks for inAppBrowserView launch mode support -->
+43        <intent>
+43-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:56:9-58:18
+44            <action android:name="android.support.customtabs.action.CustomTabsService" />
+44-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:57:13-90
+44-->C:\Users\altha\StudioProjects\joblocalee\joblocalee\android\app\src\main\AndroidManifest.xml:57:21-87
+45        </intent>
+46    </queries>
+47
+48    <permission
+48-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+49        android:name="com.example.jus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.example.jus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+53
+54    <application
+55        android:name="android.app.Application"
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.13.1] C:\Users\altha\.gradle\caches\transforms-3\3eb7ebf00ab7418903334679c104a98e\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+57        android:debuggable="true"
+58        android:extractNativeLibs="true"
+59        android:icon="@mipmap/ic_launcher"
+60        android:label="jus" >
+61        <activity
+62            android:name="com.example.jus.MainActivity"
+63            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+64            android:exported="true"
+65            android:hardwareAccelerated="true"
+66            android:launchMode="singleTop"
+67            android:taskAffinity=""
+68            android:theme="@style/LaunchTheme"
+69            android:windowSoftInputMode="adjustResize" >
+70
+71            <!--
+72                 Specifies an Android theme to apply to this Activity as soon as
+73                 the Android process has started. This theme is visible to the user
+74                 while the Flutter UI initializes. After that, this theme continues
+75                 to determine the Window background behind the Flutter UI.
+76            -->
+77            <meta-data
+78                android:name="io.flutter.embedding.android.NormalTheme"
+79                android:resource="@style/NormalTheme" />
+80
+81            <intent-filter>
+82                <action android:name="android.intent.action.MAIN" />
+83
+84                <category android:name="android.intent.category.LAUNCHER" />
+85            </intent-filter>
+86        </activity>
+87        <!--
+88             Don't delete the meta-data below.
+89             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+90        -->
+91        <meta-data
+92            android:name="flutterEmbedding"
+93            android:value="2" />
+94
+95        <uses-library
+95-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+96            android:name="androidx.window.extensions"
+96-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+97            android:required="false" />
+97-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+98        <uses-library
+98-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+99            android:name="androidx.window.sidecar"
+99-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+100            android:required="false" />
+100-->[androidx.window:window:1.2.0] C:\Users\altha\.gradle\caches\transforms-3\22bd40e7721abef735fb355f11853871\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+101
+102        <provider
+102-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+103            android:name="androidx.startup.InitializationProvider"
+103-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+104            android:authorities="com.example.jus.androidx-startup"
+104-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+105            android:exported="false" >
+105-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+106            <meta-data
+106-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+107-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+108                android:value="androidx.startup" />
+108-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\altha\.gradle\caches\transforms-3\83d4b2e1a3738d880501b4b3ab7283a7\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+111                android:value="androidx.startup" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+112        </provider>
+113
+114        <receiver
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+115            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+116            android:directBootAware="false"
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+117            android:enabled="true"
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+118            android:exported="true"
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+119            android:permission="android.permission.DUMP" >
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+121                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+124                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+125            </intent-filter>
+126            <intent-filter>
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+127                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+128            </intent-filter>
+129            <intent-filter>
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+130                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\altha\.gradle\caches\transforms-3\77ab6497d6cb5ce63bd818ff8b39719b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+131            </intent-filter>
+132        </receiver>
+133    </application>
+134
+135</manifest>

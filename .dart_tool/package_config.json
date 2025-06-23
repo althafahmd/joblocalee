@@ -11,7 +11,7 @@
       "name": "_macros",
       "rootUri": "file:///D:/Flutter/flutter/bin/cache/dart-sdk/pkg/_macros",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.5"
     },
     {
       "name": "analyzer",
@@ -662,10 +662,9 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-04-08T05:05:02.113851Z",
   "generator": "pub",
-  "generatorVersion": "3.7.2",
+  "generatorVersion": "3.8.1",
   "flutterRoot": "file:///D:/Flutter/flutter",
-  "flutterVersion": "3.29.2",
+  "flutterVersion": "3.32.2",
   "pubCache": "file:///C:/Users/altha/AppData/Local/Pub/Cache"
 }
